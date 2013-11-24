@@ -1,0 +1,185 @@
+<script type="text/x-handlebars">
+	<div class="navbar navbar-blue-container navbar-static-top" style="background: url('/header-grey-bg.jpg'); padding: 0">
+		<div class="navbar-inner container navbar-blue" style="background: none; padding: 8px 28px">
+			{{#link-to 'index' class="brand"}}Chat{{/link-to}}
+			<ul class="nav">
+				
+			</ul>
+
+			{{#if model.loggedIn}}
+				<ul class="nav pull-right">
+					<li><a href="#">Signed in as {{model.name}}</a></li>
+					<li>{{#link-to 'logout'}}Logout{{/link-to}}</li>
+				</ul>
+			{{/if}}
+		</div>
+	</div>
+
+	<div style="background: white; padding-bottom: 60px; padding-left: 27px; padding-right: 27px; border: 1px solid #ccc; border-top: none;">
+		{{outlet}}
+	</div>
+</script>
+
+<script id="home" type="text/x-handlebars">
+	<h3>Test</h3>
+</script>
+
+<script id="start" type="text/x-handlebars">
+	<div style="text-align: center; padding-top: 40px;">
+		<h3 style="margin-bottom: 40px; font-size: 1.4em; ">Welcome to Chat</h3>
+		<p style="font-size: 1.4em; ">Experience chatting like never before</p>
+		<p><i>or so you think.</i></p>
+		<div id="nick" class="form-inline" style="margin-top: 40px; margin-bottom: 40px">
+			<div class="controls">
+				{{view Em.TextField valueBinding='name' placeholder="Type your nickname" id="nicknameInput" action="start" class="span4"}}
+				<button class="btn btn-large btn-primary" {{action start}}>Go!</button>
+			</div>
+		</div>
+		<p>Personalize Chat by signing up.</p>
+		<p>Nah, only joking. Its open source by the way.</p>
+	</div>
+</script>
+
+<script id="rooms" type="text/x-handlebars">
+	<div class="choice" style="text-align: center; padding-top: 40px; margin-bottom: 40px">
+		<h3>I would like to...</h3>
+		<button {{bindAttr class=":btn-nav :btn :btn-large join:btn-primary"}} {{action willJoin}}>Join a Room</button>
+		<button {{bindAttr class=":btn-nav :btn :btn-large join::btn-primary"}} {{action willCreate}}>Create a Room</button>
+	</div>
+
+	{{#if join}}
+		<div class="container">
+			<div class="row">
+
+				<div id="roomList" class="span6 offset3">
+					<h3>Room List</h3>
+					<p><i>Click a room you would like to join.</i></p>
+					{{view Em.TextField valueBinding='searchRoom' class="input-block-level" placeholder="Search..."}}
+					<ul class="nav nav-tabs nav-stacked">
+						{{#each model}}
+							<li>
+								{{#link-to 'room' this}}{{name}}{{/link-to}}
+							</li>
+						{{/each}}
+					</ul>
+
+					<h3 style="margin-top: 35px">Unlisted room?</h3>
+					<p><i>Enter room name here to join.</i></p>
+					{{view Em.TextField valueBinding='roomName' class="input-block-level" placeholder="Room Name"}}
+					<button class="btn btn-large btn-primary pull-right">Join</button>
+				</div>
+			</div>
+		</div>
+
+	{{else}}
+
+		<div class="container">
+			<div class="row">
+				<div class="span6 offset3">
+					<h3>Create new room</h3>
+					{{view Em.TextField valueBinding="newRoom" class="input-block-level" placeholder="Enter Room Name"}}
+					<select type="radio">
+						<option>Public</option>
+						<option>Unlisted</option>
+						<option>Invitation Only</option>
+					</select>
+
+					<p>
+						<button class="btn btn-primary" {{action create}}>Create Room</button>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	{{/if}}
+</script>
+
+<script id="room" type="text/x-handlebars">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<h3>#{{name}}</h3>
+
+				<div style="margin-bottom: 20px">
+					{{#if isJoined}}
+						<button class="btn btn-danger" {{action leaveRoom}}>Leave this Room</button>
+					{{else}}
+						<button class="btn btn-primary" {{action joinRoom}}>Join this Room</button>
+					{{/if}}
+				</div>
+
+				{{#if isJoined}}
+
+					<div id="chat-inner" style="height: 350px; max-height: 350px; overflow: auto; margin-bottom: 10px; border: 1px solid #ccc; box-sizing: border-box; -moz-box-sizing: border-box; padding: 20px; background: white;">
+
+						{{#each model.messages}}
+							{{#if notify}}
+								<p><i><b>{{username}}</b> {{message}}</i></p>
+							{{else}}
+								<p><b>{{username}}:</b> {{{unbound message}}}</p>
+							{{/if}}
+						{{/each}}
+
+					</div>
+
+					<div class="form-inline">
+						{{view Em.TextArea valueBinding='text' class='input-block-level' placeholder='Type your message and press enter to send' rows="3" id="sender" action='sendMessage'}}
+
+						<div class="btn-group emotbtn">
+							<a class="btn dropdown-toggle" data-toggle="dropdown"><i class="emot emot-haha"></i></a>
+							<ul id="emots-list" class="dropdown-menu" style="overflow: auto; background: white; width: 400px">
+								{{partial emoticons}}
+							</ul>
+						</div>
+
+						<button class="btn btn-primary pull-right btn-large sendbtn" {{action sendMessage}}>Send</button>
+					</div>
+
+				{{/if}}
+			</div>
+		</div>
+
+		{{#if isJoined}}
+		<div class="row">
+			<div class="span4">
+				<h3>In this room</h3>
+				<ul>
+					{{#each model.users}}
+						<li>{{name}}</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+		{{/if}}
+	</div>
+</script>
+
+<script id="emoticons" type="text/x-handlebars">
+	{{#each emots}}
+		<li><i class="emot emot-{{unbound this}}" {{action addEmot this}}></i></li>
+	{{/each}}
+</script>
+
+<script id="loading" type="text/x-handlebars">
+	<p>Loading...</p>
+</script>
+
+<script id="bottomChatBar" type="text/x-handlebars">
+	<div id="bottomBar">
+		{{#each activeChats}}
+
+		{{/each}}
+
+		<div class="popup">
+			<header>
+				Friends
+			</header>
+
+			<ul>
+				{{#each user}}
+					{{view C.Person this}}
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</script>

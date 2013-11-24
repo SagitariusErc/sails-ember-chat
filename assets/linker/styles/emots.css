@@ -1,0 +1,545 @@
+.emot {
+	background-image: url(/emots.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.emot-adore {
+	width: 32px;
+	height: 32px;
+	background-position: -5px -5px;
+}
+
+.emot-afterboom {
+	width: 32px;
+	height: 32px;
+	background-position: -47px -5px;
+}
+
+.emot-ah {
+	width: 32px;
+	height: 32px;
+	background-position: -89px -5px;
+}
+
+.emot-amazed {
+	width: 32px;
+	height: 32px;
+	background-position: -131px -5px;
+}
+
+.emot-amazing {
+	width: 32px;
+	height: 32px;
+	background-position: -173px -5px;
+}
+
+.emot-anger {
+	width: 32px;
+	height: 32px;
+	background-position: -215px -5px;
+}
+
+.emot-angry {
+	width: 32px;
+	height: 32px;
+	background-position: -257px -5px;
+}
+
+.emot-badegg {
+	width: 32px;
+	height: 32px;
+	background-position: -299px -5px;
+}
+
+.emot-badsmelly {
+	width: 32px;
+	height: 32px;
+	background-position: -341px -5px;
+}
+
+.emot-badsmile {
+	width: 32px;
+	height: 32px;
+	background-position: -5px -47px;
+}
+
+.emot-baffle {
+	width: 32px;
+	height: 32px;
+	background-position: -47px -47px;
+}
+
+.emot-beatbrick {
+	width: 32px;
+	height: 32px;
+	background-position: -89px -47px;
+}
+
+.emot-beatplaster {
+	width: 32px;
+	height: 32px;
+	background-position: -131px -47px;
+}
+
+.emot-beatshot {
+	width: 32px;
+	height: 32px;
+	background-position: -173px -47px;
+}
+
+.emot-beated {
+	width: 32px;
+	height: 32px;
+	background-position: -215px -47px;
+}
+
+.emot-beaten {
+	width: 32px;
+	height: 32px;
+	background-position: -257px -47px;
+}
+
+.emot-beauty {
+	width: 32px;
+	height: 32px;
+	background-position: -299px -47px;
+}
+
+.emot-bigsmile {
+	width: 32px;
+	height: 32px;
+	background-position: -341px -47px;
+}
+
+.emot-bigsmile2 {
+	width: 32px;
+	height: 32px;
+	background-position: -5px -89px;
+}
+
+.emot-blackheart {
+	width: 32px;
+	height: 32px;
+	background-position: -47px -89px;
+}
+
+.emot-boss {
+	width: 32px;
+	height: 32px;
+	background-position: -89px -89px;
+}
+
+.emot-burnjossstick {
+	width: 32px;
+	height: 32px;
+	background-position: -131px -89px;
+}
+
+.emot-byebye {
+	width: 32px;
+	height: 32px;
+	background-position: -173px -89px;
+}
+
+.emot-canny {
+	width: 32px;
+	height: 32px;
+	background-position: -215px -89px;
+}
+
+.emot-choler {
+	width: 32px;
+	height: 32px;
+	background-position: -257px -89px;
+}
+
+.emot-cold {
+	width: 32px;
+	height: 32px;
+	background-position: -299px -89px;
+}
+
+.emot-confident {
+	width: 32px;
+	height: 32px;
+	background-position: -341px -89px;
+}
+
+.emot-confuse {
+	width: 32px;
+	height: 32px;
+	background-position: -5px -131px;
+}
+
+.emot-cool {
+	width: 32px;
+	height: 32px;
+	background-position: -47px -131px;
+}
+
+.emot-cry {
+	width: 32px;
+	height: 32px;
+	background-position: -89px -131px;
+}
+
+.emot-cry2 {
+	width: 32px;
+	height: 32px;
+	background-position: -131px -131px;
+}
+
+.emot-doubt {
+	width: 32px;
+	height: 32px;
+	background-position: -173px -131px;
+}
+
+.emot-dribble {
+	width: 32px;
+	height: 32px;
+	background-position: -215px -131px;
+}
+
+.emot-electricshock {
+	width: 32px;
+	height: 32px;
+	background-position: -257px -131px;
+}
+
+.emot-embarrassed {
+	width: 32px;
+	height: 32px;
+	background-position: -299px -131px;
+}
+
+.emot-exciting {
+	width: 32px;
+	height: 32px;
+	background-position: -341px -131px;
+}
+
+.emot-extremesexygirl {
+	width: 32px;
+	height: 32px;
+	background-position: -5px -173px;
+}
+
+.emot-eyesdroped {
+	width: 32px;
+	height: 32px;
+	background-position: -47px -173px;
+}
+
+.emot-feelgood {
+	width: 32px;
+	height: 32px;
+	background-position: -89px -173px;
+}
+
+.emot-girl {
+	width: 32px;
+	height: 32px;
+	background-position: -131px -173px;
+}
+
+.emot-github {
+	width: 30px;
+	height: 30px;
+	background-position: -173px -173px;
+}
+
+.emot-gmail {
+	width: 30px;
+	height: 30px;
+	background-position: -213px -173px;
+}
+
+.emot-go {
+	width: 32px;
+	height: 32px;
+	background-position: -253px -173px;
+}
+
+.emot-greedy {
+	width: 32px;
+	height: 32px;
+	background-position: -295px -173px;
+}
+
+.emot-grimace {
+	width: 32px;
+	height: 32px;
+	background-position: -337px -173px;
+}
+
+.emot-haha {
+	width: 32px;
+	height: 32px;
+	background-position: -5px -215px;
+}
+
+.emot-haha2 {
+	width: 32px;
+	height: 32px;
+	background-position: -47px -215px;
+}
+
+.emot-happy {
+	width: 32px;
+	height: 32px;
+	background-position: -89px -215px;
+}
+
+.emot-hellboy {
+	width: 32px;
+	height: 32px;
+	background-position: -131px -215px;
+}
+
+.emot-horror {
+	width: 32px;
+	height: 32px;
+	background-position: -173px -215px;
+}
+
+.emot-hungry {
+	width: 32px;
+	height: 32px;
+	background-position: -215px -215px;
+}
+
+.emot-linkedin {
+	width: 30px;
+	height: 30px;
+	background-position: -257px -215px;
+}
+
+.emot-lookdown {
+	width: 32px;
+	height: 32px;
+	background-position: -297px -215px;
+}
+
+.emot-matrix {
+	width: 32px;
+	height: 32px;
+	background-position: -339px -215px;
+}
+
+.emot-misdoubt {
+	width: 32px;
+	height: 32px;
+	background-position: -5px -257px;
+}
+
+.emot-money {
+	width: 32px;
+	height: 32px;
+	background-position: -47px -257px;
+}
+
+.emot-nosebleed {
+	width: 32px;
+	height: 32px;
+	background-position: -89px -257px;
+}
+
+.emot-nothing {
+	width: 32px;
+	height: 32px;
+	background-position: -131px -257px;
+}
+
+.emot-nothingtosay {
+	width: 32px;
+	height: 32px;
+	background-position: -173px -257px;
+}
+
+.emot-oh {
+	width: 32px;
+	height: 32px;
+	background-position: -215px -257px;
+}
+
+.emot-ops {
+	width: 32px;
+	height: 32px;
+	background-position: -257px -257px;
+}
+
+.emot-pudency {
+	width: 32px;
+	height: 32px;
+	background-position: -299px -257px;
+}
+
+.emot-rap {
+	width: 32px;
+	height: 32px;
+	background-position: -341px -257px;
+}
+
+.emot-redheart {
+	width: 32px;
+	height: 32px;
+	background-position: -5px -299px;
+}
+
+.emot-sad {
+	width: 32px;
+	height: 32px;
+	background-position: -47px -299px;
+}
+
+.emot-scorn {
+	width: 32px;
+	height: 32px;
+	background-position: -89px -299px;
+}
+
+.emot-secretsmile {
+	width: 32px;
+	height: 32px;
+	background-position: -131px -299px;
+}
+
+.emot-sexygirl {
+	width: 32px;
+	height: 32px;
+	background-position: -173px -299px;
+}
+
+.emot-shame {
+	width: 32px;
+	height: 32px;
+	background-position: -215px -299px;
+}
+
+.emot-shame2 {
+	width: 32px;
+	height: 32px;
+	background-position: -257px -299px;
+}
+
+.emot-shocked {
+	width: 32px;
+	height: 32px;
+	background-position: -299px -299px;
+}
+
+.emot-smile {
+	width: 32px;
+	height: 32px;
+	background-position: -341px -299px;
+}
+
+.emot-spiderman {
+	width: 32px;
+	height: 32px;
+	background-position: -5px -341px;
+}
+
+.emot-stackoverflow {
+	width: 30px;
+	height: 30px;
+	background-position: -47px -341px;
+}
+
+.emot-stilldreaming {
+	width: 32px;
+	height: 32px;
+	background-position: -87px -341px;
+}
+
+.emot-superman {
+	width: 32px;
+	height: 32px;
+	background-position: -129px -341px;
+}
+
+.emot-sure {
+	width: 32px;
+	height: 32px;
+	background-position: -171px -341px;
+}
+
+.emot-surrender {
+	width: 32px;
+	height: 32px;
+	background-position: -213px -341px;
+}
+
+.emot-sweat {
+	width: 32px;
+	height: 32px;
+	background-position: -255px -341px;
+}
+
+.emot-kiss {
+	width: 32px;
+	height: 32px;
+	background-position: -297px -341px;
+}
+
+.emot-ironman {
+	width: 32px;
+	height: 32px;
+	background-position: -339px -341px;
+}
+
+.emot-tire {
+	width: 32px;
+	height: 32px;
+	background-position: -383px -5px;
+}
+
+.emot-verysad {
+	width: 32px;
+	height: 32px;
+	background-position: -383px -47px;
+}
+
+.emot-tumblr {
+	width: 30px;
+	height: 30px;
+	background-position: -383px -89px;
+}
+
+.emot-twitter {
+	width: 30px;
+	height: 30px;
+	background-position: -383px -129px;
+}
+
+.emot-unhappy {
+	width: 32px;
+	height: 32px;
+	background-position: -383px -169px;
+}
+
+.emot-victory {
+	width: 32px;
+	height: 32px;
+	background-position: -381px -211px;
+}
+
+.emot-waaaht {
+	width: 32px;
+	height: 32px;
+	background-position: -383px -253px;
+}
+
+.emot-what {
+	width: 32px;
+	height: 32px;
+	background-position: -383px -295px;
+}
+
+.emot-what2 {
+	width: 32px;
+	height: 32px;
+	background-position: -383px -337px;
+}

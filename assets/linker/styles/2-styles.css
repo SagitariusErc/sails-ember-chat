@@ -1,0 +1,26 @@
+.required {
+	font-weight: bold;
+}
+
+#nick input[type=text] { font-size: 14px; height: 44px; box-sizing: border-box; }
+.sendbtn, .emotbtn { margin-top: 10px; }
+body { background: url('/white_wall_hash.png'); }
+body, input, button, textarea { font-family: "DejaVu Serif", "Droid Serif", "FreeSerif" !important; }
+#emots-list li { float: left; }
+
+::-webkit-input-placeholder {
+	font-style: italic;
+}
+
+:-moz-placeholder {
+	font-style: italic;
+}
+
+::-moz-placeholder {
+	font-style: italic;
+}
+
+.btn-nav {
+	border-radius: 0;
+	background-image: none;
+}
